@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ static_url('style.css') }}">
+        <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+        <script src="{{ static_url('chat.js')}}"></script>
+        <title>Chat</title>
+    </head>
+    <body>
+    <h3 class="center">聊天室</h3>
+        <from onsubmit="return false" >
+            <textarea  id="lines" class="text" disabled="disabled"></textarea>
+            <br/>
+            昵&emsp;称：<input type="text" id="name" placeholder="请输入你的昵称">
+            <br/>
+            发一个：<input type="text" name="send" placeholder="按回车发送">
+        </from>
+    </body>
+</html>

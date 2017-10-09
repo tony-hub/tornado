@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2b8fff71-fbdf-40e3-950e-d010d2aa5402" name="chat" url="http://45.78.62.121">
+        <fileTransfer host="45.78.62.121" accessType="SFTP" password="dfc1df98dfc3dfcedffadfccdfc7dfccdf9edfc5dfcedfc7" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

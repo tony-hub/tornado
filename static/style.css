@@ -1,0 +1,14 @@
+.text{
+    width: 500px;
+    height: 400px;
+}
+.center{
+
+    margin: 30px auto;
+
+}
+
+body{
+    margin:  30px 30px;
+    padding: 0;
+}
