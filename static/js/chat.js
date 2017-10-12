@@ -6,7 +6,7 @@ $(function(){
         alert('你的浏览器不支持websocket')
     }
 
-    socket = new WebSocket('ws://127.0.0.1:8000/websocket');
+    socket = new WebSocket('ws://192.168.255.129:8000/websocket');
     socket.onmessage = function(event){
         $('#lines').val($('#lines').val()+'\n'+event.data)
     };
@@ -20,6 +20,8 @@ $(function(){
         if(e.keyCode==13){
             if(socket.readyState == WebSocket.OPEN){
                 socket.send($('#name').val()+':'+$(this).val());
+                $(this).val('');
+
             }
         }
     })

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://v2.bootcss.com/examples/starter-template.html -->
+<html lang="en">
+<head>
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="{{static_url('css/bootstrap.css')}}">
+    {% block title %}
+    <title>bootstrap</title>
+    {% end %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    {% block css %}
+    <link rel="stylesheet" href="{{static_url('css/bootstrap-responsive.css')}}">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    {% end %}
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <!--<script src="../assets/js/html5shiv.js"></script>-->
+    <!--<![endif]&ndash;&gt;-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://v2.bootcss.com/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://v2.bootcss.com/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://v2.bootcss.com/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://v2.bootcss.com/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://v2.bootcss.com/assets/ico/favicon.png">
+  </head>
+
+  <body>
+{% block main %}
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">Project name</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="/chatroom" target="_blank">聊天室</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>Bootstrap starter template</h1>
+      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+
+    </div> <!-- /container -->
+{% end %}
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+{% block js %}
+    <script src="{{static_url('js/jquery.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-transition.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-alert.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-modal.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-dropdown.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-scrollspy.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-tab.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-tooltip.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-popover.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-button.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-collapse.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-carousel.js.下载')}}"></script>
+    <script src="{{static_url('js/bootstrap-typeahead.js.下载')}}"></script>
+{% end %}
+  
+
+</body></html>

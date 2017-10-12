@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+    {% block css %}
+     <link rel="stylesheet" href="{{static_url('css/custom.css')}}">
+    <script src="{{static_url('js/websocket.js')}}"></script>
+    {% end %}
+ {% block main %}
+<div class="chat-container">
+        <div class="left-contact-panel">
+           <button class="btn btn-primary" type="button">
+              python tornado框架班<span class="badge">+99</span>
+            </button>
+        </div>
+        <div class="right-chat-panel">
+            <div class="chat-box-title">
+               python tornado框架班
+            </div>
+            <div class="chat-box-window">
+
+            </div>
+            <div class="chat-box-emoj">
+               昵称：<input type="text" id="name" placeholder="请输入昵称">
+            </div>
+            <div class="chat-box-msg-box">
+                <textarea name="" id="msg"  style="width:640px;height: 110px;" placeholder="输入框"></textarea>
+                <button class="btn btn-success">发送消息</button>
+            </div>
+
+        </div>
+        <div class="clear-both"></div>
+    </div>
+ {% end %}
+ {% block js %}
+ <script>
+        $(document).ready(function(){
+            $("#navbar a[href='{{ request.path }}']").parent().addClass('active');
+//         $('.chat-box-window').scrollTop( $('.chat-box-window')[0].scrollHeight)
+            $('.chat-box-window').animate({scrollTop:$(this).height()},500);
+
+        })
+    </script>
+{% end %}

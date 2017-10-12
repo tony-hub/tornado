@@ -11,8 +11,12 @@ define("port", default=8000, help="run on the given port", type=int)
 
 class IndexHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render('index.html')
+        self.render('base.html')
 
+
+class ChatRoomHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('webchat.html')
 
 class ChatSocketHandler(tornado.websocket.WebSocketHandler):
     connects = set()
@@ -33,7 +37,7 @@ class ChatSocketHandler(tornado.websocket.WebSocketHandler):
 
 if __name__ == "__main__":
     tornado.options.parse_command_line()
-    app = tornado.web.Application(handlers=[(r"/", IndexHandler),(r'/websocket',ChatSocketHandler) ],
+    app = tornado.web.Application(handlers=[(r"/", IndexHandler),(r'/websocket',ChatSocketHandler),(r'/chatroom',ChatRoomHandler) ],
                                   template_path=os.path.join(os.path.dirname(__file__), 'templates'),
                                   static_path=os.path.join(os.path.dirname(__file__),'static'),
                                   debug=True,

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="2b8fff71-fbdf-40e3-950e-d010d2aa5402" name="chat" url="http://45.78.62.121">
-        <fileTransfer host="45.78.62.121" accessType="SFTP" password="dfc1df98dfc3dfcedffadfccdfc7dfccdf9edfc5dfcedfc7" username="root">
+      <webServer id="2b8fff71-fbdf-40e3-950e-d010d2aa5402" name="192.168.255.129" url="http://192.168.255.129">
+        <fileTransfer host="192.168.255.129" port="22" rootFolder="/home/pyvip/tornado" accessType="SFTP" password="dfdadfd3dfdedfc2dfc5dfc4dfdcdfc3dfda" username="pyvip">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

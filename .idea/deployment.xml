@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="chat">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="192.168.255.129">
     <serverData>
-      <paths name="chat">
+      <paths name="192.168.255.129">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
